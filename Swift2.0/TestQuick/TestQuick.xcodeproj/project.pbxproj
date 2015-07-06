@@ -21,6 +21,7 @@
 		B5F36EDA1B4A1A1800659562 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F36ED91B4A1A1800659562 /* Offer.swift */; };
 		B5F36EDB1B4A1A1800659562 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F36ED91B4A1A1800659562 /* Offer.swift */; };
 		B5F36EDD1B4A28D800659562 /* OfferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F36EDC1B4A28D800659562 /* OfferTests.swift */; };
+		B5F36EDF1B4A2ADB00659562 /* BananaHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F36EDE1B4A2ADB00659562 /* BananaHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		B5987A721B4A044400F34C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F36ED91B4A1A1800659562 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		B5F36EDC1B4A28D800659562 /* OfferTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferTests.swift; sourceTree = "<group>"; };
+		B5F36EDE1B4A2ADB00659562 /* BananaHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BananaHelpers.swift; sourceTree = "<group>"; };
 		BA0C9DA698C34BECE583D363 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F1DC9AAC0A61054BB9CBD30C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 				B5987A671B4A044400F34C30 /* Info.plist */,
 				B510002C1B4A10A7001CAF45 /* BananaTests.swift */,
 				B5F36EDC1B4A28D800659562 /* OfferTests.swift */,
+				B5F36EDE1B4A2ADB00659562 /* BananaHelpers.swift */,
 			);
 			path = TestQuickTests;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			files = (
 				B5F36EDD1B4A28D800659562 /* OfferTests.swift in Sources */,
 				B5F36EDB1B4A1A1800659562 /* Offer.swift in Sources */,
+				B5F36EDF1B4A2ADB00659562 /* BananaHelpers.swift in Sources */,
 				B510002D1B4A10A7001CAF45 /* BananaTests.swift in Sources */,
 				B5F36ED71B4A17D200659562 /* Banana.swift in Sources */,
 				B5987A661B4A044400F34C30 /* TestQuickTests.swift in Sources */,
