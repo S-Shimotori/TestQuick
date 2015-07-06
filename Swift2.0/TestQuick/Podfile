@@ -1,0 +1,5 @@
+link_with 'TestQuickTests', 'TestQuickTests'
+
+use_frameworks!
+pod 'Quick'
+pod Nimble
