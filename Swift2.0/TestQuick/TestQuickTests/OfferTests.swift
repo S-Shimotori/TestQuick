@@ -9,10 +9,10 @@
 import XCTest
 
 class OfferTests: XCTestCase {
-    
+    var banana: Banana!
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        banana = Banana()
     }
     
     override func tearDown() {
@@ -21,7 +21,6 @@ class OfferTests: XCTestCase {
     }
 
     func testOffer_whenTheBananaIsPeeled_offersTheBanana() {
-        let banana = Banana()
         banana.peel()
 
         let message = offer(banana)
@@ -30,8 +29,6 @@ class OfferTests: XCTestCase {
     }
 
     func testOffer_whenTheBananaIsntPeeled_offersToPeelTheBanana() {
-        let banana = Banana()
-
         let message = offer(banana)
 
         XCTAssertEqual(message, "Hey, want me to peel this banana for you?")
