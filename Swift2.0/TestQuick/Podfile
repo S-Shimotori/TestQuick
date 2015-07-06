@@ -2,4 +2,4 @@ link_with 'TestQuickTests', 'TestQuickTests'
 
 use_frameworks!
 pod 'Quick'
-pod 'Nimble'
+pod 'Nimble', '2.0.0-rc.1'

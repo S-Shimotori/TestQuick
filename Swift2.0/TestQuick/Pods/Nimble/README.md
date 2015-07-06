@@ -1,7 +1,5 @@
 # Nimble
 
-[![Circle CI](https://circleci.com/gh/Quick/Nimble/tree/master.svg?style=svg&circle-token=6115c5d83f74a6c59a484dd8921b97096404a5f3)](https://circleci.com/gh/Quick/Nimble/tree/master)
-
 Use Nimble to express the expected outcomes of Swift
 or Objective-C expressions. Inspired by
 [Cedar](https://github.com/pivotal/cedar).
@@ -99,7 +97,7 @@ expect(seagull.squawk).to(equal("Squee!"))
 ```objc
 // Objective-C
 
-@import Nimble;
+#import <Nimble/Nimble.h>
 
 expect(seagull.squawk).to(equal(@"Squee!"));
 ```
@@ -123,7 +121,7 @@ expect(seagull.squawk).notTo(equal("Oh, hello there!"))
 ```objc
 // Objective-C
 
-@import Nimble;
+#import <Nimble/Nimble.h>
 
 expect(seagull.squawk).toNot(equal(@"Oh, hello there!"));
 expect(seagull.squawk).notTo(equal(@"Oh, hello there!"));
@@ -351,7 +349,7 @@ to keep in mind when using Nimble in Objective-C:
    ```objc
    // Objective-C
 
-   @import Nimble;
+   #import <Nimble/Nimble.h>
 
    expect(@(1 + 1)).to(equal(@2));
    expect(@"Hello world").to(contain(@"world"));
@@ -377,7 +375,7 @@ importing Nimble:
 ```objc
 #define NIMBLE_DISABLE_SHORT_SYNTAX 1
 
-@import Nimble;
+#import <Nimble/Nimble.h>
 
 NMB_expect(^{ return seagull.squawk; }, __FILE__, __LINE__).to(NMB_equal(@"Squee!"));
 ```

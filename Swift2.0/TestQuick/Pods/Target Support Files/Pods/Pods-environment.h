@@ -8,7 +8,7 @@
 
 // Nimble
 #define COCOAPODS_POD_AVAILABLE_Nimble
-#define COCOAPODS_VERSION_MAJOR_Nimble 1
+#define COCOAPODS_VERSION_MAJOR_Nimble 2
 #define COCOAPODS_VERSION_MINOR_Nimble 0
 #define COCOAPODS_VERSION_PATCH_Nimble 0
 

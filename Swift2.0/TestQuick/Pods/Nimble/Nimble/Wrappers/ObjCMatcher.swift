@@ -1,33 +1,33 @@
 import Foundation
 
-public typealias MatcherBlock = (actualExpression: Expression<NSObject>, failureMessage: FailureMessage) -> Bool
-public typealias FullMatcherBlock = (actualExpression: Expression<NSObject>, failureMessage: FailureMessage, shouldNotMatch: Bool) -> Bool
+typealias MatcherBlock = (actualExpression: Expression<NSObject>, failureMessage: FailureMessage) -> Bool
+typealias FullMatcherBlock = (actualExpression: Expression<NSObject>, failureMessage: FailureMessage, shouldNotMatch: Bool) -> Bool
 @objc public class NMBObjCMatcher : NMBMatcher {
     let _match: MatcherBlock
     let _doesNotMatch: MatcherBlock
     let canMatchNil: Bool
 
-    public init(canMatchNil: Bool, matcher: MatcherBlock, notMatcher: MatcherBlock) {
+    init(canMatchNil: Bool, matcher: MatcherBlock, notMatcher: MatcherBlock) {
         self.canMatchNil = canMatchNil
         self._match = matcher
         self._doesNotMatch = notMatcher
     }
 
-    public convenience init(matcher: MatcherBlock) {
+    convenience init(matcher: MatcherBlock) {
         self.init(canMatchNil: true, matcher: matcher)
     }
 
-    public convenience init(canMatchNil: Bool, matcher: MatcherBlock) {
+    convenience init(canMatchNil: Bool, matcher: MatcherBlock) {
         self.init(canMatchNil: canMatchNil, matcher: matcher, notMatcher: ({ actualExpression, failureMessage in
             return !matcher(actualExpression: actualExpression, failureMessage: failureMessage)
         }))
     }
 
-    public convenience init(matcher: FullMatcherBlock) {
+    convenience init(matcher: FullMatcherBlock) {
         self.init(canMatchNil: true, matcher: matcher)
     }
 
-    public convenience init(canMatchNil: Bool, matcher: FullMatcherBlock) {
+    convenience init(canMatchNil: Bool, matcher: FullMatcherBlock) {
         self.init(canMatchNil: canMatchNil, matcher: ({ actualExpression, failureMessage in
             return matcher(actualExpression: actualExpression, failureMessage: failureMessage, shouldNotMatch: false)
         }), notMatcher: ({ actualExpression, failureMessage in
