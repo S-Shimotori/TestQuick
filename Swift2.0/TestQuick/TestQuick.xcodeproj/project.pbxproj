@@ -214,6 +214,7 @@
 		B5987A451B4A044300F34C30 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "S-Shimotori";
 				TargetAttributes = {
