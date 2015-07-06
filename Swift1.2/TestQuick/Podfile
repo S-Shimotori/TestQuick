@@ -1,5 +1,5 @@
 link_with 'TestQuickTests'
 
 use_frameworks!
-pod 'Quick'
-pod 'Nimble'
+pod 'Quick', '< 0.4'
+pod 'Nimble', '< 2.0'
