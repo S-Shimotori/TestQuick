@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		36EF362B1980D649E36CD97B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DC9AAC0A61054BB9CBD30C /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B510002B1B4A1074001CAF45 /* Banana.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510002A1B4A1074001CAF45 /* Banana.swift */; };
+		B510002D1B4A10A7001CAF45 /* BananaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510002C1B4A10A7001CAF45 /* BananaTests.swift */; };
 		B5987A511B4A044300F34C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5987A501B4A044300F34C30 /* AppDelegate.swift */; };
 		B5987A531B4A044300F34C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5987A521B4A044300F34C30 /* ViewController.swift */; };
 		B5987A561B4A044300F34C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5987A541B4A044300F34C30 /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		B5987A5B1B4A044400F34C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5987A591B4A044400F34C30 /* LaunchScreen.storyboard */; };
 		B5987A661B4A044400F34C30 /* TestQuickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5987A651B4A044400F34C30 /* TestQuickTests.swift */; };
 		B5987A711B4A044400F34C30 /* TestQuickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5987A701B4A044400F34C30 /* TestQuickUITests.swift */; };
+		B5F36ED71B4A17D200659562 /* Banana.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510002A1B4A1074001CAF45 /* Banana.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		9E08347197AA4A10B48F8B1C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B510002A1B4A1074001CAF45 /* Banana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banana.swift; sourceTree = "<group>"; };
+		B510002C1B4A10A7001CAF45 /* BananaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BananaTests.swift; sourceTree = "<group>"; };
 		B5987A4D1B4A044300F34C30 /* TestQuick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestQuick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5987A501B4A044300F34C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5987A521B4A044300F34C30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +124,7 @@
 				B5987A571B4A044400F34C30 /* Assets.xcassets */,
 				B5987A591B4A044400F34C30 /* LaunchScreen.storyboard */,
 				B5987A5C1B4A044400F34C30 /* Info.plist */,
+				B510002A1B4A1074001CAF45 /* Banana.swift */,
 			);
 			path = TestQuick;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 			children = (
 				B5987A651B4A044400F34C30 /* TestQuickTests.swift */,
 				B5987A671B4A044400F34C30 /* Info.plist */,
+				B510002C1B4A10A7001CAF45 /* BananaTests.swift */,
 			);
 			path = TestQuickTests;
 			sourceTree = "<group>";
@@ -332,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5987A531B4A044300F34C30 /* ViewController.swift in Sources */,
+				B510002B1B4A1074001CAF45 /* Banana.swift in Sources */,
 				B5987A511B4A044300F34C30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B510002D1B4A10A7001CAF45 /* BananaTests.swift in Sources */,
+				B5F36ED71B4A17D200659562 /* Banana.swift in Sources */,
 				B5987A661B4A044400F34C30 /* TestQuickTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
