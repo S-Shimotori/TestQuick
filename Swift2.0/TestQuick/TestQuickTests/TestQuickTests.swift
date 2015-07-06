@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import TestQuick
 
 class TestQuickTests: XCTestCase {
     
