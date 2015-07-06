@@ -21,7 +21,7 @@ class BananaTests: XCTestCase {
         super.tearDown()
     }
 
-    func testPeel() {
+    func testPeel_makesTheBananaEdible() {
         // Arrange: Create the banana we'll be peeling.
         let banana = Banana()
 
